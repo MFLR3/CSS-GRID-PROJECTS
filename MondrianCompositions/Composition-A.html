@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project: Composition A</title>
+  <style>
+    /*
+      Pixel total:
+        columns: 540px
+        rows: 540px
+    */
+
+    .container_container {
+      display:grid;
+      place-items: center;
+      margin-top: 4rem;
+      padding: 100px;
+    }
+
+    .container {
+      width:auto;
+      height: auto;
+      display: grid;
+      gap:3px;
+      grid-template-columns: 30px 65px 115px 135px 150px 30px 15px;
+      grid-template-rows: 20px 50px 40px 120px 95px 95px 55px 35px 30px;
+      background-color: #3c3231;
+      box-shadow: 0px 0px 20px 0px;
+    }
+    
+    /*
+    grid-area: 1 / 1 / 1 / 1;
+    Order - row-start, col-start, row-end, col-end
+    */
+
+    .black-1 {
+      grid-area: 1 / 1 / 4 / 2;
+    }
+
+    .grey-1 {
+      grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .red-1 {
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .white-1 {
+      grid-area: 1 / 4 / 3 / 5;
+    }
+
+    .white-2 {
+      grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .yellow-1 {
+      grid-area: 3 / 4 / 4 / 5;
+    }
+
+    .grey-2 {
+      grid-area: 1 / 5 / 3 / 6;
+    }
+
+    .blue-1 {
+      grid-area: 3 / 5 / 4 / 6;
+    }
+
+    .yellow-2 {
+      grid-area: 1 / 6 / 4 / 8;
+    }
+
+    .white-3 {
+      grid-area: 4 / 1 / 6 / 2;
+    }
+
+    .blue-2 {
+      grid-area: 4 / 2 / 5 / 4;
+    }
+
+    .black-2 {
+      grid-area: 5 / 2 / 6 / 4;
+    }
+
+    .yellow-3 {
+      grid-area: 4 / 4 / 5 / 5;
+    }
+
+    .grey-3 {
+      grid-area: 4 / 5 / 5 / 6;
+    }
+    
+    .red-2 {
+      grid-area: 4 / 6 / 7 / 7;
+    }
+
+    .white-4 {
+      grid-area: 5 / 4 / 6 / 5;
+    }
+
+    .black-3 {
+      grid-area: 5 / 5 / 7 / 6;
+    }
+
+    .white-5 {
+      grid-area: 4 / 7 / 7 / 8;
+    }
+
+    .red-3 {
+      grid-area: 6 / 3 / 9 / 4;
+    }
+
+    .white-6 {
+      grid-area: 6 / 4 / 7 / 5;
+    }
+
+    .blue-3 {
+      grid-area: 7 / 4 / 9 / 5;
+    }
+
+    .yellow-4 {
+      grid-area: 7 / 5 / 9 / 6;
+    }
+
+    .white-7 {
+      grid-area: 7 / 6 / 10 / -1;
+    }    
+
+    .white-8 {
+      grid-area: 8 / 1 / 10 / 3;
+    }
+
+    .black-4 {
+      grid-area: 9 / 3 / 10 / 5;
+    }
+
+    .grey-4 {
+      grid-area: 6 / 1 / 8 / 3;
+    }
+
+    .black-1, .black-2, .black-3, .black-4 {
+      background-color: #1b1515;
+    }
+
+    .white-1, .white-2, .white-3, .white-4, .white-5, .white-6, .white-7, .white-8, .white-9 {
+      background-color: #f1fcf8;
+    }
+
+    .grey-1, .grey-2, .grey-3, .grey-4, .grey-5 {
+      background-color: #d5d8df;
+    }
+
+    .yellow-1, .yellow-2, .yellow-3, .yellow-4 {
+      background-color: #feed00;
+    }
+
+    .red-1, .red-2, .red-3 {
+      background-color: #ec3620;
+    }
+
+    .blue-1, .blue-2, .blue-3 {
+      background-color: #5c3fad;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container_container">
+    <div class="container">
+      <div class="black-1"></div>
+      <div class="grey-1"></div>
+      <div class="red-1"></div>
+      <div class="white-1"></div>
+      <div class="white-2"></div>
+      <div class="yellow-1"></div>
+      <div class="grey-2"></div>
+      <div class="blue-1"></div>
+      <div class="yellow-2"></div>
+      <div class="white-3"></div>
+      <div class="blue-2"></div>
+      <div class="black-2"></div>
+      <div class="yellow-3"></div>
+      <div class="white-4"></div>
+      <div class="grey-3"></div>
+      <div class="black-3"></div>
+      <div class="red-2"></div>
+      <div class="white-5"></div>
+      <div class="grey-4"></div>
+      <div class="red-3"></div>
+      <div class="white-6"></div>
+      <div class="blue-3"></div>
+      <div class="yellow-4"></div>
+      <div class="white-7"></div>
+      <div class="white-8"></div>
+      <div class="black-4"></div> 
+      <div class="grey-5"></div>      
+    </div>
+  </div>
+</body>
+</html>
